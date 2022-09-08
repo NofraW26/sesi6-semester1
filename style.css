@@ -1,0 +1,97 @@
+*,
+html,
+body {
+  padding: 0%;
+  margin: 0%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  color: black;
+  background-color: white;
+}
+
+.dark {
+  color: white;
+  background-color: black;
+}
+
+.listNavbar {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
+
+.listNavbarDark {
+  background-color: #222;
+}
+
+.listNavbar > div {
+  width: 80vh;
+  display: flex;
+}
+
+.listNavbar > div :hover {
+  background-color: #555;
+  transition-delay: 0.2ms;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.listNavbar > div > a {
+  height: 8vh;
+  padding: 0% 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.listNavbar > i {
+  font-size: 47px;
+  margin-right: 20px;
+}
+
+.content {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.textContent {
+  font-size: 50px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.textContent1 {
+  font-size: 25px;
+  height: 50%;
+  display: flex;
+  align-items: flex-end;
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 576px) {
+  .listNavbar > div > a {
+    font-size: 20px;
+  }
+  .listNavbar > i {
+    font-size: 40px;
+    margin-right: 0%;
+  }
+}
