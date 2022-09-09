@@ -13,18 +13,22 @@
     <section>
       <nav class="listNavbar">
         <div>
-          <a onclick="">Home</a>
-          <a onclick="">Dark Mode</a>
-          <a id="test" onclick="">Rainbow</a>
+          <a id="textHome" onclick="buttonHome()">Home</a>
+          <a id="textReset" onclick="buttonReset()"><p>Reset</p></a>
+          <a id="textDarkMode" onclick="buttonMode('dark')">Dark Mode</a>
+          <a id="textRainbow" onclick="buttonMode('rainbow')">Rainbow</a>
         </div>
-        <i class="bi bi-cloud-sun"></i>
+        <i id="iconLight" class="bi bi-cloud-sun"></i>
+        <i id="iconDark" class="bi bi-cloud-moon"></i>
+        <i id="iconRainbow" class="bi bi-rainbow"></i>
       </nav>
     </section>
 
     <!-- content -->
     <section class="content">
-      <div class="textContent">web ini dibuat sepenuh hati</div>
-      <div class="textContent1">hai</div>
+      <div class="textContent">web ini dibuat sepenuh hati <i class="bi bi-heart-fill"></i></div>
+      <div id="textContent1"></div>
     </section>
+    <script src="data.js"></script>
   </body>
 </html>
